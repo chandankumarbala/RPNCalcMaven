@@ -41,7 +41,14 @@ public class App
 	
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        System.out.println( "Welcome to RPN Calculator" );
+        App app=new App();
+        try{
+        	System.out.println( "Result : "+ app.calculate(args[0]));
+        }catch(Exception e){
+        	e.printStackTrace();
+        }
+       
     }
     
     private static boolean isOperator(String data){
